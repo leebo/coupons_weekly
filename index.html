@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= @promotion.title %></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/css/ez-min.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/css/main.css">
+  </head>
+  <body>
+    <!-- Plain box -->
+    <div class="ez-wr">
+      <div v-for="weekly_item in weekly.weekly_items" class="ez-box m-b-sm">
+        <a href="{{weekly_item.url}}">
+          <img :src="weekly_item.url" class="img_mobile" alt="">
+        </a>
+      </div>
+      <div class="ez-box footer">本页面由疯味昌吉平台提供<br>技术支持：行者网络</div>
+    </div>
+    <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

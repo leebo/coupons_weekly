@@ -1,6 +1,6 @@
 Vue.use(VueResource)
 var vm = new Vue({
-  el: ".ez-wr",
+  el: ".app",
   data: {
     weekly: {}
   },

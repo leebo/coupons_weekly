@@ -1,0 +1,6 @@
+{
+  "src": ".",
+  "dest": "qiniu:access_key=RiipuyGoKVf15apmFZrLjjNDaZbxbSJQmu3b1Ki9&secret_key=5dAcjYwPq932qlfH-BQtwjT47pL7gm_uJOpgPMKq&bucket=changji123",
+  "debug_level": 1,
+  "ignore_patterns": [".git/",".DS_Store"]
+}

@@ -6,7 +6,7 @@ var vm = new Vue({
   },
   created: function() {
     var weekly_id = this.getQuery("wid")
-    this.$http.get("http://localhost:3000/weeklies/" + weekly_id,function(data) {
+    this.$http.get("http://wx.xj8.net/weeklies/" + weekly_id,function(data) {
       this.$data = data
     })
   },

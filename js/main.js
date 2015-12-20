@@ -5,9 +5,11 @@ var vm = new Vue({
     weekly: {}
   },
   created: function() {
+    $('#loadingToast').show();
     var weekly_id = this.getQuery("wid")
     this.$http.get("http://wx.xj8.net/weeklies/" + weekly_id,function(data) {
       this.$data = data
+      $('#loadingToast').hide();
     })
   },
   ready: function() {
